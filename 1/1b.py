@@ -1,6 +1,9 @@
 import re
+import time
 
-lines = open("input.txt", "r").readlines()
+start_time = time.time()
+
+lines = open("1/input.txt", "r").readlines()
 
 spelled = {
     "one": "1",
@@ -55,3 +58,4 @@ for line in lines:
     values.append(int(first + last))
 
 print(sum(values))
+print("--- %s seconds ---" % (time.time() - start_time))

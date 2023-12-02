@@ -1,4 +1,8 @@
+import time
+
+start_time = time.time()
 lines = open("2/input.txt", "r").readlines()
+
 
 limits = {
     "red": 12,
@@ -44,3 +48,4 @@ for line in lines:
 
 
 print(sum(values))
+print("--- %s seconds ---" % (time.time() - start_time))

@@ -1,4 +1,8 @@
+import time
+
+start_time = time.time()
 lines = open("2/input.txt", "r").readlines()
+
 
 get_id = lambda l: int(l.split(":")[0].split(" ")[1])
 
@@ -31,3 +35,4 @@ for line in lines:
     powers.append(check_possible(line)["power"])
 
 print(sum(powers))
+print("--- %s seconds ---" % (time.time() - start_time))

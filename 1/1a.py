@@ -1,5 +1,7 @@
 import re
+import time
 
+start_time = time.time()
 lines = open("1/input.txt", "r").readlines()
 
 find = lambda s: re.findall(r"\d+", s)
@@ -11,3 +13,4 @@ for line in lines:
     values.append(int(combine(split(find(line)))))
 
 print(sum(values))
+print("--- %s seconds ---" % (time.time() - start_time))
