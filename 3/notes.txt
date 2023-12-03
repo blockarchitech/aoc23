@@ -1,0 +1,3 @@
+Most credit for this code goes to https://github.com/amrutha-b-nair/Advent-of-Code/blob/main/2023/day3/solution.py
+
+I got real stuck on this one, trying to parse things in maps is not my thing 
